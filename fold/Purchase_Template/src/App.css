@@ -1,0 +1,361 @@
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: flex;
+  align-items: center;
+  padding:  16px;
+  background-color: rgb(98, 165, 232);
+  color: white;
+}
+
+/* Left Section */
+.navbar-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.bill-description {
+  margin: 0;
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.3;;
+}
+
+/* Right Section */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.navbar-link:hover {
+  background-color: #40a9ff;
+}
+
+/* Dropdown Styles */
+.company-name,
+.language-dropdown,
+.logout-dropdown,
+.navbar-btn {
+  color: white;
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
+
+.company-name:hover,
+.language-dropdown:hover,
+.logout-dropdown:hover,
+.navbar-btn:hover {
+  color: #01070b;
+}
+
+/* Button Styles */
+.navbar-btn {
+  background-color: rgb(115, 195, 89);
+  border: none;
+  margin-right: 0px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-btn:hover {
+  background-color: #40a9ff;
+}
+
+/* Dropdown Menu Items */
+.ant-dropdown-menu-item {
+  color: #333;
+}
+
+/* Badge */
+.ant-badge-count {
+  background-color: red;
+}
+
+<--------section------------>
+/*Form Input Styles*/
+.form-item input,
+.form-item .ant-select,
+.form-item .ant-picker {
+  min-height: 40px;
+  font-size: 1rem;
+}
+
+.form-item label {
+  font-weight: 600;
+  color: #201f1f;
+  font-size: 0.95rem;
+}
+
+.form-actions {
+  padding-top: 20px;
+}
+
+.ant-btn {
+  min-width: 50px;
+  height: 40px;
+  font-size: 1rem;
+}
+
+ /* Underline for Select */
+.underlined-select .ant-select-selector {
+  border: none !important;
+  border-bottom: 1px solid #d9d9d9 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
+  padding-left: 0;
+  padding-right: 0;
+  transition: border-color 0.3s ease;
+}
+
+.underlined-select:hover .ant-select-selector,
+.underlined-select:focus-within .ant-select-selector {
+  border-bottom: 1px solid #1890ff !important;
+}
+
+/* Underline for DatePicker */
+.underlined-datepicker {
+  border: none !important;
+  border-bottom: 1px solid #d9d5d5 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
+  padding-left: 0;
+  padding-right: 0;
+  transition: border-color 0.3s ease;
+}
+
+.underlined-datepicker:hover,
+.underlined-datepicker:focus-within {
+  border-bottom: 1px solid #1890ff !important;
+}
+.underlined-select{
+  border-bottom: 1px solid #d9d9d9;
+  border-radius: 0;
+  box-shadow: none;
+}
+.underlined-select:focus-within,
+.underlined-select:focus{
+  border-bottom: 2px solid #1890ff;
+  outline: none;
+}
+.underlined-select,
+.underlined-datepicker {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0;
+  width: 100%;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+}
+/* For AntD Input (Text Fields) */
+.underlined-input .ant-input {
+  border: none;
+  border-bottom: 2px solid #ccc;
+  border-radius: 0;
+  background-color: transparent;
+  box-shadow: none !important;
+  transition: border-color 0.3s ease;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.underlined-input .ant-input:focus {
+  border-bottom: 2px solid #1890ff;
+  outline: none;
+}
+
+/* For AntD Select */
+.underlined-select .ant-select-selector {
+  border: none !important;
+  border-bottom: 2px solid #ccc !important;
+  border-radius: 0 !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  transition: border-color 0.3s ease;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.underlined-select .ant-select-selector:focus,
+.underlined-select .ant-select-focused .ant-select-selector {
+  border-bottom: 2px solid #1890ff !important;
+}
+
+/* For AntD DatePicker */
+.underlined-datepicker .ant-picker {
+  border: none;
+  border-bottom: 2px solid #111111;
+  border-radius: 0;
+  background-color: transparent;
+  box-shadow: none !important;
+  transition: border-color 0.3s ease;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.underlined-datepicker .ant-picker-focused {
+  border-bottom: 2px solid #1890ff;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+}
+
+
+.purchase-form-container {
+  flex: 1;
+  padding: 24px;
+}
+/*note*/
+.note-container {
+  margin-top: 30px;
+  width: 50%;
+  padding: 16px;
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.note-container h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.note-textarea {
+  width: 50%;
+  min-height: 120px;
+  resize: vertical;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.note-textarea:focus {
+  border-color: #1890ff;
+  box-shadow: 0 0 4px rgba(24, 144, 255, 0.3);
+}
+
+.file-upload-container {
+  margin-top: 24px;
+  width: 100%;
+}
+
+.file-upload-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.file-upload-text {
+  flex: 1;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  background-color: #fff;
+}
+
+.file-upload-button {
+  background-color: #1890ff;
+  color: white;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  border: 1px solid #1890ff;
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+}
+
+.file-upload-input {
+  display: none;
+}
+.floating-button-group {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  padding: 10px;
+  background: #f0f0f0;
+  border-radius: 8px 0 0 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+.inline-button-group {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 32px;
+  margin-right: 20px;
+  padding-bottom: 20px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+  margin: 0 12px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0;
+  right: 0; bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 24px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #4caf50;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+
